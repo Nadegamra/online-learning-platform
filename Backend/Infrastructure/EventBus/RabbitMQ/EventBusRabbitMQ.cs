@@ -257,8 +257,10 @@ namespace Infrastructure.EventBus.RabbitMQ
                 var subscriptions = _subsManager.GetHandlersForEvent(eventName);
                 foreach (var subscription in subscriptions)
                 {
+                    _logger.LogTrace("Handler Type: {HandlerType}", subscription.HandlerType);
                     if (subscription.IsDynamic)
                     {
+                        _logger.LogTrace("Event is dynamic");
                         if (scope.ServiceProvider.GetService(subscription.HandlerType) is not IDynamicIntegrationEventHandler handler) continue;
                         using dynamic eventData = JsonDocument.Parse(message);
                         await Task.Yield();
@@ -266,12 +268,17 @@ namespace Infrastructure.EventBus.RabbitMQ
                     }
                     else
                     {
+                        _logger.LogTrace("Event is not dynamic");
                         var handler = scope.ServiceProvider.GetService(subscription.HandlerType);
-                        if (handler == null) continue;
+                        if (handler == null)
+                        {
+                            _logger.LogTrace("Event handler is null");
+                            continue;
+                        }
                         var eventType = _subsManager.GetEventTypeByName(eventName);
                         var integrationEvent = System.Text.Json.JsonSerializer.Deserialize(message, eventType, new JsonSerializerOptions() { PropertyNameCaseInsensitive = true });
                         var concreteType = typeof(IIntegrationEventHandler<>).MakeGenericType(eventType);
-
+                        _logger.LogTrace("Handling the event...");
                         await Task.Yield();
                         await (Task)concreteType.GetMethod("Handle").Invoke(handler, new object[] { integrationEvent });
                     }
