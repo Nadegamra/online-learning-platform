@@ -7,3 +7,6 @@
 [submodule "Backend/Services/CourseManagement"]
 	path = Backend/Services/CourseManagement
 	url = git@github.com:Nadegamra/microservices-course_management.git
+[submodule "Backend/Services/CourseContentManagement"]
+	path = Backend/Services/CourseContentManagement
+	url = git@github.com:Nadegamra/microservices-course_content_management.git

@@ -13,6 +13,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastru
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services.Common", "Services\Services.Common\Services.Common.csproj", "{4298822B-FFE9-4255-A669-8F5AD21725DB}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{5804367D-22DE-4FC6-9A0D-5E856F45B598}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CourseContentManagement", "Services\CourseContentManagement\CourseContentManagement.csproj", "{A246BEED-4249-437C-A1DA-A2EC3D4F9EFB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,11 +43,18 @@ Global
 		{4298822B-FFE9-4255-A669-8F5AD21725DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4298822B-FFE9-4255-A669-8F5AD21725DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4298822B-FFE9-4255-A669-8F5AD21725DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A246BEED-4249-437C-A1DA-A2EC3D4F9EFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A246BEED-4249-437C-A1DA-A2EC3D4F9EFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A246BEED-4249-437C-A1DA-A2EC3D4F9EFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A246BEED-4249-437C-A1DA-A2EC3D4F9EFB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {24474453-254B-49BE-B43D-235F77B08376}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A246BEED-4249-437C-A1DA-A2EC3D4F9EFB} = {5804367D-22DE-4FC6-9A0D-5E856F45B598}
 	EndGlobalSection
 EndGlobal

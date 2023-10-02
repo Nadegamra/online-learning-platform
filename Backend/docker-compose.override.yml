@@ -11,7 +11,7 @@ services:
 
         JwtSecret: 'oNVf9U3X+8vThOT9a7DRocqxtuFqpCrKg1e/2nvD3zqlb4tjsGuTh+mnspnVghmJ+3aoSQXPr3pcRqd3VZkz409QGoljHDffD2QcrmDFxn4A2yoX5ZWd4C5r98tnG4XB9pX+a+AiJJ8fj/cUS7DH42ZA1CNui18283rDihuGE1c='
 
-        EventBus__SubscriptionClientName: "CourseManagement"
+        EventBus__SubscriptionClientName: "Authentication"
         EventBus__HostName: "bunny"
         EventBus__Port: "5672"
         EventBus__UserName: "authentication"
@@ -38,7 +38,7 @@ services:
 
       JwtSecret: 'oNVf9U3X+8vThOT9a7DRocqxtuFqpCrKg1e/2nvD3zqlb4tjsGuTh+mnspnVghmJ+3aoSQXPr3pcRqd3VZkz409QGoljHDffD2QcrmDFxn4A2yoX5ZWd4C5r98tnG4XB9pX+a+AiJJ8fj/cUS7DH42ZA1CNui18283rDihuGE1c='
 
-      EventBus__SubscriptionClientName: "Authentication"
+      EventBus__SubscriptionClientName: "CourseManagement"
       EventBus__HostName: "bunny"
       EventBus__Port: "5672"
       EventBus__UserName: "course_management"
@@ -51,3 +51,28 @@ services:
     ports:
       - "44397:80"
       - "44398:443"
+  coursecontentmanagement:
+    environment:
+      ASPNETCORE_ENVIRONMENT: 'Development'
+      ASPNETCORE_URLS: 'https://+:443;http://+:80'
+      
+      Database__ConnectionString: "server=sqlstore; port=3306; user=root; password=Password123!; database=course_management"
+
+      IP__Address: 'localhost'
+      IP__Port: '3000'
+
+      JwtSecret: 'oNVf9U3X+8vThOT9a7DRocqxtuFqpCrKg1e/2nvD3zqlb4tjsGuTh+mnspnVghmJ+3aoSQXPr3pcRqd3VZkz409QGoljHDffD2QcrmDFxn4A2yoX5ZWd4C5r98tnG4XB9pX+a+AiJJ8fj/cUS7DH42ZA1CNui18283rDihuGE1c='
+
+      EventBus__SubscriptionClientName: "CourseContentManagement"
+      EventBus__HostName: "bunny"
+      EventBus__Port: "5672"
+      EventBus__UserName: "course_content_management"
+      EventBus__Password: "Password123!"
+      EventBus__RetryCount: "5"
+
+      ASPNETCORE_Kestrel__Certificates__Default__Path: "/certs/localhost.crt"
+      ASPNETCORE_Kestrel__Certificates__Default__KeyPath: "/certs/localhost.key" 
+
+    ports:
+      - "44399:80"
+      - "44340:443"

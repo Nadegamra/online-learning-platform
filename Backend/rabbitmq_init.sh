@@ -20,6 +20,13 @@ if ! rabbitmqctl list_users | grep -q '^course_management'; then
     rabbitmqctl set_permissions -p / course_management ".*" ".*" ".*"
 fi
 
+# Check if the 'course_content_management' user exists
+if ! rabbitmqctl list_users | grep -q '^course_content_management'; then
+    # If not, add user and set permissions
+    rabbitmqctl add_user course_content_management Password123!
+    rabbitmqctl set_permissions -p / course_content_management ".*" ".*" ".*"
+fi
+
 # Stop the background RabbitMQ server
 rabbitmqctl stop
 

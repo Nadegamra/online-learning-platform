@@ -34,6 +34,22 @@ services:
       - /sr/Services/CourseManagement/bin/
       - /home/karolis/.certs:/certs
     working_dir: /src/Services/CourseManagement
+  coursecontentmanagement:
+    image: ${DOCKER_REGISTRY-}coursecontentmanagement:dev
+    container_name: course_content_management
+    restart: unless_stopped
+    build: 
+      context: .
+      dockerfile: Services/CourseContentManagement/Dockerfile.dev
+    depends_on:
+      - mysql
+      - rabbit
+    volumes:
+      - .:/src
+      - /src/Services/CourseContentManagement/obj/
+      - /sr/Services/CourseContentManagement/bin/
+      - /home/karolis/.certs:/certs
+    working_dir: /src/Services/CourseContentManagement
   mysql:
     container_name: sqlstore
     image: ${DOCKER_REGISTRY-}mysql
