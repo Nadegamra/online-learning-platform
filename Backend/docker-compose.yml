@@ -37,7 +37,7 @@ services:
   coursecontentmanagement:
     image: ${DOCKER_REGISTRY-}coursecontentmanagement:dev
     container_name: course_content_management
-    restart: unless_stopped
+    restart: unless-stopped
     build: 
       context: .
       dockerfile: Services/CourseContentManagement/Dockerfile.dev
