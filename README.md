@@ -9,16 +9,16 @@ An example platform for creating and taking online courses
 ## Current platform status
 | Functionality                  | API           | [Frontend]     |
 | ------------------------------ |:-------------:| :-------------:|
-| [Authentication]               | ⏳            | ✅             |
+| [Authentication]               | ✅            | ✅             |
 | [Course Management]            | ✅            | ⏳             |
-| Course Content Management      | ❌            | ❌             |
+| [Course Content Management]    | ⏳            | ⏳             |
 | Course Participation           | ❌            | ❌             |
 | Test Taking                    | ❌            | ❌             |
 
 [Authentication]: https://github.com/Nadegamra/microservices-authentication
 [Course Management]: https://github.com/Nadegamra/microservices-course_management
 [Frontend]: https://github.com/Nadegamra/olp-frontend-spa
-
+[Course Content Management]: https://github.com/Nadegamra/microservices-course_content_management
 ## Launch instructions
 ### General requirements
 - Having docker installed on the device
