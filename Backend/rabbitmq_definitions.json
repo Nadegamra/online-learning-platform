@@ -1,0 +1,52 @@
+{
+    "users": [
+      {
+        "name": "authentication",
+        "password_hash": "O9+iza2pOFSBJE3FnVSBlLuWU9StXNCdLX3k+lm/oZNOeOM6",
+        "hashing_algorithm": "rabbit_password_hashing_sha256",
+        "tags": "administrator"
+      },
+      {
+        "name": "course_management",
+        "password_hash": "O9+iza2pOFSBJE3FnVSBlLuWU9StXNCdLX3k+lm/oZNOeOM6",
+        "hashing_algorithm": "rabbit_password_hashing_sha256",
+        "tags": "administrator"
+      },
+      {
+        "name": "course_content_management",
+        "password_hash": "O9+iza2pOFSBJE3FnVSBlLuWU9StXNCdLX3k+lm/oZNOeOM6",
+        "hashing_algorithm": "rabbit_password_hashing_sha256",
+        "tags": "administrator"
+      }
+    ],
+    "vhosts": [],
+    "permissions": [
+      {
+        "user": "authentication",
+        "vhost": "/",
+        "configure": ".*",
+        "write": ".*",
+        "read": ".*"
+      },
+      {
+        "user": "course_management",
+        "vhost": "/",
+        "configure": ".*",
+        "write": ".*",
+        "read": ".*"
+      },
+      {
+        "user": "course_content_management",
+        "vhost": "/",
+        "configure": ".*",
+        "write": ".*",
+        "read": ".*"
+      }
+    ],
+    "parameters": [],
+    "policies": [],
+    "queues": [],
+    "exchanges": [],
+    "bindings": []
+  }
+  

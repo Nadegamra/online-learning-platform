@@ -12,7 +12,7 @@ services:
         JwtSecret: 'oNVf9U3X+8vThOT9a7DRocqxtuFqpCrKg1e/2nvD3zqlb4tjsGuTh+mnspnVghmJ+3aoSQXPr3pcRqd3VZkz409QGoljHDffD2QcrmDFxn4A2yoX5ZWd4C5r98tnG4XB9pX+a+AiJJ8fj/cUS7DH42ZA1CNui18283rDihuGE1c='
 
         EventBus__SubscriptionClientName: "CourseManagement"
-        EventBus__HostName: "bunny"
+        EventBus__HostName: "rabbit"
         EventBus__Port: "5672"
         EventBus__UserName: "authentication"
         EventBus__Password: "Password123!"
@@ -39,7 +39,7 @@ services:
       JwtSecret: 'oNVf9U3X+8vThOT9a7DRocqxtuFqpCrKg1e/2nvD3zqlb4tjsGuTh+mnspnVghmJ+3aoSQXPr3pcRqd3VZkz409QGoljHDffD2QcrmDFxn4A2yoX5ZWd4C5r98tnG4XB9pX+a+AiJJ8fj/cUS7DH42ZA1CNui18283rDihuGE1c='
 
       EventBus__SubscriptionClientName: "Authentication"
-      EventBus__HostName: "bunny"
+      EventBus__HostName: "rabbit"
       EventBus__Port: "5672"
       EventBus__UserName: "course_management"
       EventBus__Password: "Password123!"
@@ -64,7 +64,7 @@ services:
       JWT__Secret: 'oNVf9U3X+8vThOT9a7DRocqxtuFqpCrKg1e/2nvD3zqlb4tjsGuTh+mnspnVghmJ+3aoSQXPr3pcRqd3VZkz409QGoljHDffD2QcrmDFxn4A2yoX5ZWd4C5r98tnG4XB9pX+a+AiJJ8fj/cUS7DH42ZA1CNui18283rDihuGE1c='
 
       EventBus__SubscriptionClientName: "CourseContentManagement"
-      EventBus__HostName: "bunny"
+      EventBus__HostName: "rabbit"
       EventBus__Port: "5672"
       EventBus__UserName: "course_content_management"
       EventBus__Password: "Password123!"

@@ -64,8 +64,8 @@ services:
       MYSQL_USER: 'admin'
       MYSQL_PASSWORD: 'Password123!'
   rabbit:
-    container_name: bunny
-    hostname: bunny
+    container_name: rabbit
+    hostname: rabbit
     image: ${DOCKER_REGISTRY-}rabbit:dev
     restart: unless-stopped
     build:

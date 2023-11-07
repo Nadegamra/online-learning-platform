@@ -1,6 +1,5 @@
 FROM rabbitmq:3.12.0-management-alpine
-
-COPY rabbitmq_init.sh /rabbitmq_init.sh
-RUN chmod +x /rabbitmq_init.sh
-
-ENTRYPOINT ["/rabbitmq_init.sh"]
+ADD rabbitmq.config /etc/rabbitmq/
+ADD rabbitmq_definitions.json /etc/rabbitmq/
+RUN chown rabbitmq:rabbitmq /etc/rabbitmq/rabbitmq.config /etc/rabbitmq/rabbitmq_definitions.json
+CMD ["rabbitmq-server"]
