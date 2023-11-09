@@ -19,7 +19,11 @@
         "tags": "administrator"
       }
     ],
-    "vhosts": [],
+    "vhosts": [
+      {
+        "name": "/"
+      }
+    ],
     "permissions": [
       {
         "user": "authentication",

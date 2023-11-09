@@ -1,0 +1,70 @@
+version: '3.4'
+name: olp_backend
+
+services:
+  proxy:
+    image: olp_proxy:dev
+    build: .
+  authentication:
+    image: olp_authentication:dev
+    build:
+      context: .
+      dockerfile: Services/Authentication/Dockerfile.dev
+    volumes:
+      - .:/src
+      - /src/Services/Authentication/obj/
+      - /src/Services/Authentication/bin/
+    ports:
+      - "44395:80"
+      - "44396:443"
+    environment:
+      ASPNETCORE_ENVIRONMENT: 'Development'
+      ASPNETCORE_URLS: "https://+:443;http://+:80"
+      ASPNETCORE_Kestrel__Certificates__Default__Path: "/certs/localhost.crt"
+      ASPNETCORE_Kestrel__Certificates__Default__KeyPath: "/certs/localhost.key" 
+      IP__Address: 'localhost'
+  coursemanagement:
+    image: olp_coursemanagement:dev
+    build:
+      context: .
+      dockerfile: Services/CourseManagement/Dockerfile.dev
+    volumes:
+      - .:/src
+      - /src/Services/CourseManagement/obj/
+      - /src/Services/CourseManagement/bin/
+    ports:
+      - "44397:80"
+      - "44398:443"
+    environment:
+      ASPNETCORE_ENVIRONMENT: 'Development'
+      ASPNETCORE_URLS: "https://+:443;http://+:80"
+      ASPNETCORE_Kestrel__Certificates__Default__Path: "/certs/localhost.crt"
+      ASPNETCORE_Kestrel__Certificates__Default__KeyPath: "/certs/localhost.key" 
+      IP__Address: 'localhost'
+  coursecontentmanagement:
+    image: olp_coursecontentmanagement:dev
+    build: 
+      context: .
+      dockerfile: Services/CourseContentManagement/Dockerfile.dev
+    volumes:
+      - .:/src
+      - /src/Services/CourseContentManagement/obj/
+      - /src/Services/CourseContentManagement/bin/
+    ports:
+      - "44399:80"
+      - "44400:443"
+    environment:
+      ASPNETCORE_ENVIRONMENT: 'Development'
+      ASPNETCORE_URLS: "https://+:443;http://+:80"
+      ASPNETCORE_Kestrel__Certificates__Default__Path: "/certs/localhost.crt"
+      ASPNETCORE_Kestrel__Certificates__Default__KeyPath: "/certs/localhost.key" 
+      IP__Address: 'localhost'
+  rabbit:
+    image: olp_rabbit:dev
+    build:
+      context: .
+      dockerfile: Dockerfile_RabbitMQ
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+volumes:
+  rabbitmq_data:

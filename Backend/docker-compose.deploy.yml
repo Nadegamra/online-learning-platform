@@ -1,0 +1,76 @@
+version: '3.4'
+name: olp_backend
+
+services:
+  proxy:
+    container_name: proxy
+    image: nadegamra.azurecr.io/olp_proxy:1.0
+    build: .
+    ports:
+      - 80:80
+      - 443:443
+    depends_on:
+      - authentication
+      - coursemanagement
+      - coursecontentmanagement
+  authentication:
+    container_name: authentication
+    image: nadegamra.azurecr.io/olp_authentication:1.0
+    build:
+      context: .
+      dockerfile: Services/Authentication/Dockerfile.prod
+    depends_on:
+      - rabbit
+    environment:
+      ASPNETCORE_ENVIRONMENT: 'Production'
+      ASPNETCORE_URLS: "https://+:443;http://+:80"
+      ASPNETCORE_Kestrel__Certificates__Default__Path: "/certs/localhost.crt"
+      ASPNETCORE_Kestrel__Certificates__Default__KeyPath: "/certs/localhost.key" 
+      IP__Address: 'https://nadegamrapizzaapp.azurewebsites.net'
+    env_file:
+      - auth_dev.env
+    working_dir: /src/Services/Authentication
+  coursemanagement:
+    container_name: course_management
+    image: nadegamra.azurecr.io/olp_coursemanagement:1.0
+    build:
+      context: .
+      dockerfile: Services/CourseManagement/Dockerfile.prod
+    depends_on:
+      - rabbit
+    environment:
+      ASPNETCORE_ENVIRONMENT: 'Production'
+      ASPNETCORE_URLS: "https://+:443;http://+:80"
+      ASPNETCORE_Kestrel__Certificates__Default__Path: "/certs/localhost.crt"
+      ASPNETCORE_Kestrel__Certificates__Default__KeyPath: "/certs/localhost.key" 
+      IP__Address: 'https://nadegamrapizzaapp.azurewebsites.net'
+    working_dir: /src/Services/CourseManagement
+  coursecontentmanagement:
+    container_name: course_content_management
+    image: nadegamra.azurecr.io/olp_coursecontentmanagement:1.0
+    build: 
+      context: .
+      dockerfile: Services/CourseContentManagement/Dockerfile.prod
+    depends_on:
+      - rabbit
+    environment:
+      ASPNETCORE_ENVIRONMENT: 'Production'
+      ASPNETCORE_URLS": "https://+:443;http://+:80"
+      ASPNETCORE_Kestrel__Certificates__Default__Path: "/certs/localhost.crt"
+      ASPNETCORE_Kestrel__Certificates__Default__KeyPath: "/certs/localhost.key" 
+      IP__Address: 'https://nadegamrapizzaapp.azurewebsites.net'
+    working_dir: /src/Services/CourseContentManagement
+  rabbit:
+    container_name: rabbit
+    image: nadegamra.azurecr.io/olp_rabbit:1.0
+    build:
+      context: .
+      dockerfile: Dockerfile_RabbitMQ
+    hostname: rabbit
+    restart: unless-stopped
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+networks:
+  default:
+    name: online_learning_platform
