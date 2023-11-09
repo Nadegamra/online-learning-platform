@@ -1,86 +1,46 @@
 version: '3.4'
-name: backend
+name: olp_backend
 
 services:
-  authentication:
-    container_name: authentication
-    image: ${DOCKER_REGISTRY-}authentication:dev
-    restart: unless-stopped
-    build:
-      context: .
-      dockerfile: Services/Authentication/Dockerfile.dev
-    depends_on:
-      - mysql
-      - rabbit
-    volumes:
-      - .:/src
-      - /src/Services/Authentication/obj/
-      - /sr/Services/Authentication/bin/
-      - /home/karolis/.certs:/certs
-    working_dir: /src/Services/Authentication
-  coursemanagement:
-    image: ${DOCKER_REGISTRY-}coursemanagement:dev
-    container_name: course_management
-    restart: unless-stopped
-    build:
-      context: .
-      dockerfile: Services/CourseManagement/Dockerfile.dev
-    depends_on:
-      - mysql
-      - rabbit
-    volumes:
-      - .:/src
-      - /src/Services/CourseManagement/obj/
-      - /sr/Services/CourseManagement/bin/
-      - /home/karolis/.certs:/certs
-    working_dir: /src/Services/CourseManagement
-  coursecontentmanagement:
-    image: ${DOCKER_REGISTRY-}coursecontentmanagement:dev
-    container_name: course_content_management
-    restart: unless-stopped
-    build: 
-      context: .
-      dockerfile: Services/CourseContentManagement/Dockerfile.dev
-    depends_on:
-      - mysql
-      - rabbit
-    volumes:
-      - .:/src
-      - /src/Services/CourseContentManagement/obj/
-      - /sr/Services/CourseContentManagement/bin/
-      - /home/karolis/.certs:/certs
-    working_dir: /src/Services/CourseContentManagement
-  mysql:
-    container_name: sqlstore
-    image: ${DOCKER_REGISTRY-}mysql
+  proxy:
+    container_name: proxy    
     restart: unless-stopped
     ports:
-      - '3307:3306'
-    volumes:
-      - mysql_data:/var/lib/mysql
+      - 80:80
+      - 443:443
+    depends_on:
+      - authentication
+      - coursemanagement
+      - coursecontentmanagement
+  authentication:
+    container_name: authentication
+    restart: unless-stopped
+    depends_on:
+      - rabbit
     environment:
-      MYSQL_ROOT_PASSWORD: 'Password123!'
-      MYSQL_ROOT_HOST: '%'
-      MYSQL_USER: 'admin'
-      MYSQL_PASSWORD: 'Password123!'
+      JwtSecret: 'oNVf9U3X+8vThOT9a7DRocqxtuFqpCrKg1e/2nvD3zqlb4tjsGuTh+mnspnVghmJ+3aoSQXPr3pcRqd3VZkz409QGoljHDffD2QcrmDFxn4A2yoX5ZWd4C5r98tnG4XB9pX+a+AiJJ8fj/cUS7DH42ZA1CNui18283rDihuGE1c='
+    env_file:
+      - auth_dev.env
+    working_dir: /src/Services/Authentication
+  coursemanagement:
+    container_name: course_management
+    restart: unless-stopped
+    depends_on:
+      - rabbit
+    working_dir: /src/Services/CourseManagement
+  coursecontentmanagement:
+    container_name: course_content_management
+    restart: unless-stopped
+    depends_on:
+      - rabbit
+    working_dir: /src/Services/CourseContentManagement
   rabbit:
     container_name: rabbit
     hostname: rabbit
-    image: ${DOCKER_REGISTRY-}rabbit:dev
     restart: unless-stopped
-    build:
-      context: .
-      dockerfile: Dockerfile_RabbitMQ
-    volumes:
-      - rabbitmq_data:/var/lib/rabbitmq
     ports:
       - "15672:15672"
       - "5672:5672"
 networks:
   default:
     name: online_learning_platform
-volumes:
-  mysql_data:
-  rabbitmq_data:
-
-
