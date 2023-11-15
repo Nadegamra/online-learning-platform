@@ -27,14 +27,15 @@ An example platform for creating and taking online courses
 #### Requirements
 - Having an email (for sending Authentication service emails)
 - Having a Google Drive API Service Account (for storing course images)
-#### Instructions
+#### Instructions (Dev)
 - Create auth_dev.env file inside `./Backend` directory. It should contain these environment variables:
   - Smtp__EmailAddress (Email address from which to send account confirmation emails, etc.)
   - Smtp__EmailPass (If you are using gmail, you should generate an App Password, but this could differ according to email provider)
   - Smtp__TestEmail (Used for testing. Email to which all mail is redirected, leave empty to turn off this functionality)
 - Get a Google Drive API Service Account json key, rename it to `key.json` and place inside the `./Backend/Services/CourseManagement/` directory
-- Execute `dotnet ef database update` in `./Backend/Services/Authentication` and `./Backend/Services/CourseManagement`
-- Execute `docker-compose up` from `./Backend` directory
+- Uncomment localhost ConnectionStrings and comment out sqlstore ones in `./Backend/Services/Authentication`, `./Backend/Services/CourseManagement`, `./Backend/Services/CourseContentManagement` (might fix this later)
+- Execute `dotnet ef database update` in `./Backend/Services/Authentication`, `./Backend/Services/CourseManagement`, `./Backend/Services/CourseContentManagement`
+- Execute `docker-compose -f docker-compose.yml -f docker-compose.dev.yml up` from `./Backend` directory
 ### Frontend
-#### Instructions
-- Execute `docker-compose up` from `./Frontend` directory
+#### Instructions (dev)
+- Execute `docker-compose -f docker.compose.yml up` from `./Frontend` directory
