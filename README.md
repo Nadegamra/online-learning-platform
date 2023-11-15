@@ -36,6 +36,13 @@ An example platform for creating and taking online courses
 - Uncomment localhost ConnectionStrings and comment out sqlstore ones in `./Backend/Services/Authentication`, `./Backend/Services/CourseManagement`, `./Backend/Services/CourseContentManagement` (might fix this later)
 - Execute `dotnet ef database update` in `./Backend/Services/Authentication`, `./Backend/Services/CourseManagement`, `./Backend/Services/CourseContentManagement`
 - Execute `docker-compose -f docker-compose.yml -f docker-compose.dev.yml up` from `./Backend` directory
+#### Instructions (Prod)
+- Dev steps except for the last 3
+- Replace Database__ConnectionString within each microservice appsettings.Production.json file
+- Execute `docker-compose -f docker-compose.yml -f docker-compose.prod.yml up` from `./Backend` directory
 ### Frontend
-#### Instructions (dev)
+#### Instructions (Dev)
+- Execute `docker-compose -f docker.compose.yml up` from `./Frontend` directory
+#### Instructions (Prod)
+- Replace .env.prod file VITE_BACKEND_URI with either http://localhost if run locally or with deployed backend url
 - Execute `docker-compose -f docker.compose.yml up` from `./Frontend` directory
