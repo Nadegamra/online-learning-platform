@@ -1,6 +1,7 @@
 # online-learning-platform (WIP)
 An example platform for creating and taking online courses
 ## Tech stack
+- Nginx proxy
 - .NET7
 - React
 - MySql
@@ -10,7 +11,7 @@ An example platform for creating and taking online courses
 | Functionality                  | API           | [Frontend]     |
 | ------------------------------ |:-------------:| :-------------:|
 | [Authentication]               | ✅            | ✅             |
-| [Course Management]            | ✅            | ⏳             |
+| [Course Management]            | ✅            | ✅             |
 | [Course Content Management]    | ⏳            | ⏳             |
 | Course Participation           | ❌            | ❌             |
 | Test Taking                    | ❌            | ❌             |
