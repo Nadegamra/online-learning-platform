@@ -64,7 +64,7 @@ An example full-stack web app for creating and participating in online courses
 [Course Management]: https://github.com/Nadegamra/microservices-course_management
 [Frontend]: https://github.com/Nadegamra/olp-frontend-spa
 [Course Content Management]: https://github.com/Nadegamra/microservices-course_content_management
-## Launch instructions
+## Build instructions
 ### General requirements
 - Having docker installed on the device
 ### Backend
