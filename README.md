@@ -46,3 +46,7 @@ An example platform for creating and taking online courses
 #### Instructions (Prod)
 - Replace .env.prod file VITE_BACKEND_URI with either http://localhost if run locally or with deployed backend url
 - Execute `docker-compose -f docker.compose.yml up` from `./Frontend` directory
+## API reference
+- [Authentication microservice](https://github.com/Nadegamra/microservices-authentication/blob/master/APIReference.md)
+- [Course Management microservice](https://github.com/Nadegamra/microservices-course_management/blob/master/docs/APIReference.md)
+- [Course Content Management microservice](https://github.com/Nadegamra/microservices-course_content_management/blob/master/docs/APIReference.md)
