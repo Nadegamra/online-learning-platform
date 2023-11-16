@@ -25,7 +25,7 @@ services:
       ASPNETCORE_Kestrel__Certificates__Default__Path: "/certs/localhost.crt"
       ASPNETCORE_Kestrel__Certificates__Default__KeyPath: "/certs/localhost.key" 
       Database__ConnectionString": "server=sqlstore; port=3306; user=root; password=Password123!; database=authentication"
-      IP__Address: 'localhost'
+      IP__Address: 'localhost:3000'
   coursemanagement:
     image: olp_coursemanagement:dev
     build:
@@ -46,7 +46,7 @@ services:
       ASPNETCORE_Kestrel__Certificates__Default__Path: "/certs/localhost.crt"
       ASPNETCORE_Kestrel__Certificates__Default__KeyPath: "/certs/localhost.key" 
       Database__ConnectionString": "server=sqlstore; port=3306; user=root; password=Password123!; database=course_management"
-      IP__Address: 'localhost'
+      IP__Address: 'localhost:3000'
   coursecontentmanagement:
     image: olp_coursecontentmanagement:dev
     build: 
@@ -67,7 +67,7 @@ services:
       ASPNETCORE_Kestrel__Certificates__Default__Path: "/certs/localhost.crt"
       ASPNETCORE_Kestrel__Certificates__Default__KeyPath: "/certs/localhost.key" 
       Database__ConnectionString": "server=sqlstore; port=3306; user=root; password=Password123!; database=course_content_management"
-      IP__Address: 'localhost'
+      IP__Address: 'localhost:3000'
   mysql:
     container_name: sqlstore
     image: mysql
