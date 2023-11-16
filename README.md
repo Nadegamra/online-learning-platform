@@ -1,5 +1,48 @@
-# online-learning-platform (WIP)
-An example platform for creating and taking online courses
+# Online Learning Platform
+An example full-stack web app for creating and participating in online courses
+## Functional Requirements
+  - Unregistered user:
+    - [x] View public courses and their contents
+    - [x] Create a new account
+  - Registered user:
+    - [x] Login
+    - [x] Logout
+    - [x] Manage personal info:
+      - [x] Username
+      - [x] Email
+      - [x] Password
+    - [x] Queue account for deletion
+  - Registered educator:
+    - [x] Create and manage courses, specify:
+      -  [x] Description
+      -  [x] Preview image
+      -  [x] Pricing info
+      -  [x] Course length
+      -  [x] Scheduling info
+      -  [x] Gained and prerequisite skills
+      -  [x] Supported languages and subtitles
+      -  [x] Course visibility
+    -  [x] Course sections
+    -  [x] Text content
+    -  [ ] Video content
+    -  [ ] Downloadable files
+    -  [ ] File submissions
+    -  [ ] Quizes
+      -  [ ] Multiple-choice
+      -  [ ] Open questions
+      -  [ ] Drag & drop
+      -  [ ] Coding questions 
+  - Registered learner:
+    - [ ] Join courses
+    - [ ] Access course content
+    - [ ] Submit course feedback
+    - [ ] Report inappropriate content
+  - Administrator:
+    - [ ] Manage list of languages
+    - [ ] Manage list of skills
+    - [ ] Review inappropriate content reports
+    - [ ] Block inappropriate content
+    - [ ] Block users       
 ## Tech stack
 - Nginx proxy
 - .NET7
