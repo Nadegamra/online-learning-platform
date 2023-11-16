@@ -51,7 +51,7 @@ An example full-stack web app for creating and participating in online courses
 - MySql
 - RabbitMQ
 - Docker
-## Current platform status
+## Current progress
 | Functionality                  | API           | [Frontend]     |
 | ------------------------------ |:-------------:| :-------------:|
 | [Authentication]               | ✅            | ✅             |
