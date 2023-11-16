@@ -38,8 +38,9 @@ An example full-stack web app for creating and participating in online courses
     - [ ] Submit course feedback
     - [ ] Report inappropriate content
   - Administrator:
-    - [ ] Manage list of languages
-    - [ ] Manage list of skills
+    - [x] Manage list of languages
+    - [x] Manage list of skills
+    - [ ] View hidden content
     - [ ] Review inappropriate content reports
     - [ ] Block inappropriate content
     - [ ] Block users       
