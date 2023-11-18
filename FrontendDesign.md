@@ -34,7 +34,11 @@ Wireframe                  |  Implementation
 ![Settings_Page](https://github.com/Nadegamra/STPP/assets/63640402/e74bd219-4716-4c59-8aeb-fe6e41ae23f4) | ![image](https://github.com/Nadegamra/STPP/assets/63640402/090284b8-9455-4b4d-92d1-332a4d37a736)
 ## Educator
 ### Create Course Page
-### Course Info Edit Page
-### Course Sections Edit Page
-### My Courses Page
+![image](https://github.com/Nadegamra/STPP/assets/63640402/327ceae7-b759-4867-b616-ff8ed5c7828a)
 ### My Course Page
+#### Course Info Edit Page
+![image](https://github.com/Nadegamra/STPP/assets/63640402/9171bba9-3412-4f43-82f3-ab921bfd5bb0)
+#### Course Sections Edit Page
+![image](https://github.com/Nadegamra/STPP/assets/63640402/492031d7-26b5-409f-a65d-8698a1cabbc3)
+### My Courses Page
+![image](https://github.com/Nadegamra/STPP/assets/63640402/ddb78252-be38-4ffa-8768-49d42f320802)
