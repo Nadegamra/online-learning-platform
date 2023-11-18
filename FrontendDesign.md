@@ -1,4 +1,5 @@
 # Pages
+## Public
 ### Register Page
 Wireframe                  |  Implementation
 :-------------------------:|:-------------------------:
@@ -23,8 +24,6 @@ Wireframe                  |  Implementation
 Wireframe                  |  Implementation
 :-------------------------:|:-------------------------:
 ![Info_Page_View](https://github.com/Nadegamra/STPP/assets/63640402/fd175521-8894-44f9-b9ad-35fb1d2abd97) | ![image](https://github.com/Nadegamra/STPP/assets/63640402/042368dc-9a5c-40d8-800f-45af0aa824f2)
-### Page Not Found Page
-## Public
 ### Change Email Page
 ### Change Password Page
 ### Confirm Email Page
