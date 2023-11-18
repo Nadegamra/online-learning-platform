@@ -97,3 +97,5 @@ An example full-stack web app for creating and participating in online courses
 - [Authentication microservice](https://github.com/Nadegamra/microservices-authentication/blob/master/APIReference.md)
 - [Course Management microservice](https://github.com/Nadegamra/microservices-course_management/blob/master/docs/APIReference.md)
 - [Course Content Management microservice](https://github.com/Nadegamra/microservices-course_content_management/blob/master/docs/APIReference.md)
+## Frontend Design
+- [Wireframes with implementations](https://github.com/Nadegamra/STPP/blob/master/FrontendDesign.md)
