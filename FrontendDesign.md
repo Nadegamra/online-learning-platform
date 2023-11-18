@@ -29,6 +29,9 @@ Wireframe                  |  Implementation
 ### Confirm Email Page
 ## User
 ### Settings Page
+Wireframe                  |  Implementation
+:-------------------------:|:-------------------------:
+![Settings_Page](https://github.com/Nadegamra/STPP/assets/63640402/e74bd219-4716-4c59-8aeb-fe6e41ae23f4) | ![image](https://github.com/Nadegamra/STPP/assets/63640402/090284b8-9455-4b4d-92d1-332a4d37a736)
 ## Educator
 ### Create Course Page
 ### Course Info Edit Page
