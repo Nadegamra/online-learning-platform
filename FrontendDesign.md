@@ -22,11 +22,8 @@ Wireframe                  |  Implementation
 ### Info Page View Page
 Wireframe                  |  Implementation
 :-------------------------:|:-------------------------:
-![image](https://github.com/Nadegamra/STPP/assets/63640402/042368dc-9a5c-40d8-800f-45af0aa824f2)
+![Info_Page_View](https://github.com/Nadegamra/STPP/assets/63640402/fd175521-8894-44f9-b9ad-35fb1d2abd97) | ![image](https://github.com/Nadegamra/STPP/assets/63640402/042368dc-9a5c-40d8-800f-45af0aa824f2)
 ### Page Not Found Page
-Wireframe                  |  Implementation
-:-------------------------:|:-------------------------:
-![image](https://github.com/Nadegamra/STPP/assets/63640402/2d6072e0-4b33-47d7-b7ce-3f203055fd80)
 ## Public
 ### Change Email Page
 ### Change Password Page
