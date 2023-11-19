@@ -39,7 +39,9 @@ Wireframe                  |  Implementation
 ![Course_Create_Page](https://github.com/Nadegamra/STPP/assets/63640402/fa470e42-36e5-42c4-8fa5-4f2ad1bde9b9) | ![image](https://github.com/Nadegamra/STPP/assets/63640402/17f0901e-d5b6-4d9e-81c1-3cd5cba933d6)
 ### My Course Page
 #### Course Info Edit Page
-![image](https://github.com/Nadegamra/STPP/assets/63640402/9171bba9-3412-4f43-82f3-ab921bfd5bb0)
+Wireframe                  |  Implementation
+:-------------------------:|:-------------------------:
+![Course_Edit_Skills](https://github.com/Nadegamra/STPP/assets/63640402/0cc3155a-6a39-49e2-ba51-4f0ad60860a5) | ![image](https://github.com/Nadegamra/STPP/assets/63640402/9171bba9-3412-4f43-82f3-ab921bfd5bb0)
 #### Course Sections Edit Page
 Wireframe                  |  Implementation
 :-------------------------:|:-------------------------:
