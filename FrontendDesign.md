@@ -31,22 +31,22 @@ Wireframe                  |  Implementation
 ### Settings Page
 Wireframe                  |  Implementation
 :-------------------------:|:-------------------------:
-![Settings_Page](https://github.com/Nadegamra/STPP/assets/63640402/e74bd219-4716-4c59-8aeb-fe6e41ae23f4) | ![image](https://github.com/Nadegamra/STPP/assets/63640402/090284b8-9455-4b4d-92d1-332a4d37a736)
+![image](https://github.com/Nadegamra/online-learning-platform/assets/63640402/7d9f8293-03c2-49b1-b557-fd5dbdb37179) | ![image](https://github.com/Nadegamra/STPP/assets/63640402/090284b8-9455-4b4d-92d1-332a4d37a736)
 ## Educator
 ### Create Course Page
 Wireframe                  |  Implementation
 :-------------------------:|:-------------------------:
-![Course_Create_Page](https://github.com/Nadegamra/STPP/assets/63640402/fa470e42-36e5-42c4-8fa5-4f2ad1bde9b9) | ![image](https://github.com/Nadegamra/STPP/assets/63640402/17f0901e-d5b6-4d9e-81c1-3cd5cba933d6)
+![image](https://github.com/Nadegamra/online-learning-platform/assets/63640402/b72fbab5-cf9c-4afd-baa2-290ea5d81c88) | ![image](https://github.com/Nadegamra/STPP/assets/63640402/17f0901e-d5b6-4d9e-81c1-3cd5cba933d6)
 ### My Course Page
 #### Course Info Edit Page
 Wireframe                  |  Implementation
 :-------------------------:|:-------------------------:
-![Course_Edit_Skills](https://github.com/Nadegamra/STPP/assets/63640402/0cc3155a-6a39-49e2-ba51-4f0ad60860a5) | ![image](https://github.com/Nadegamra/STPP/assets/63640402/9171bba9-3412-4f43-82f3-ab921bfd5bb0)
+![image](https://github.com/Nadegamra/online-learning-platform/assets/63640402/1c9b1ada-1d4d-45d8-a577-2ed131149257) | ![image](https://github.com/Nadegamra/STPP/assets/63640402/9171bba9-3412-4f43-82f3-ab921bfd5bb0)
 #### Course Sections Edit Page
 Wireframe                  |  Implementation
 :-------------------------:|:-------------------------:
-![Course_Edit_Sections](https://github.com/Nadegamra/STPP/assets/63640402/c8a31103-04f1-4462-8475-185d0b8fcf6a) | ![image](https://github.com/Nadegamra/STPP/assets/63640402/492031d7-26b5-409f-a65d-8698a1cabbc3)
+![image](https://github.com/Nadegamra/online-learning-platform/assets/63640402/e94e9de6-47a8-4b9a-b460-2c2aad89d4cf) | ![image](https://github.com/Nadegamra/STPP/assets/63640402/492031d7-26b5-409f-a65d-8698a1cabbc3)
 ### My Courses Page
 Wireframe                  |  Implementation
 :-------------------------:|:-------------------------:
-![Courses_list_ed](https://github.com/Nadegamra/STPP/assets/63640402/3491b42d-8786-45d9-bcba-ceb5889c586e) | ![image](https://github.com/Nadegamra/STPP/assets/63640402/ddb78252-be38-4ffa-8768-49d42f320802)
+![image](https://github.com/Nadegamra/online-learning-platform/assets/63640402/1822e109-87e4-400b-bd93-ca041522daf4) | ![image](https://github.com/Nadegamra/STPP/assets/63640402/ddb78252-be38-4ffa-8768-49d42f320802)
