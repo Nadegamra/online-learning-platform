@@ -43,7 +43,16 @@ An example full-stack web app for creating and participating in online courses
     - [ ] View hidden content
     - [ ] Review inappropriate content reports
     - [ ] Block inappropriate content
-    - [ ] Block users       
+    - [ ] Block users
+## What I learned so far
+- That I didn't didn't know what HTTP codes should be returned
+- There can be many variation of JWT authentication
+- One of JWT benefits is that you can store extra information in the token
+- If need a functionality in frontend, it's most certainly already done and published by someone else
+- Commonly you can make page more responsive by remove the CSS
+- Using non-standard ports can make the deployment more difficult or even impossible
+- Proxy server can be useful, when you have multiple apps, but only 1 port
+- Even if the app works perfectly locally, it may not work at all in production
 ## Tech stack
 - Nginx proxy
 - .NET7
