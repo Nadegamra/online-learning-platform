@@ -3,27 +3,27 @@
 ### Register Page
 Wireframe                  |  Implementation
 :-------------------------:|:-------------------------:
-![Register](https://github.com/Nadegamra/STPP/assets/63640402/f61f6ec2-a56f-40eb-8ee7-ba43acc098e3) | ![image](https://github.com/Nadegamra/STPP/assets/63640402/6b50a2e9-597c-46a2-aeea-954254a1de7a) 
+![image](https://github.com/Nadegamra/online-learning-platform/assets/63640402/4db25b92-fa8b-4ec8-9de3-84bdd9925a78) | ![image](https://github.com/Nadegamra/online-learning-platform/assets/63640402/62a0a66b-fffb-416d-9cc8-291402af5b4c)
 ### Login Page
 Wireframe                  |  Implementation
 :-------------------------:|:-------------------------:
-![Login](https://github.com/Nadegamra/STPP/assets/63640402/d048df8f-f873-4d64-860a-0d1ea1e97110) | ![image](https://github.com/Nadegamra/STPP/assets/63640402/3b9448dd-b9bf-4e15-9257-2e426b14e944)
+![image](https://github.com/Nadegamra/online-learning-platform/assets/63640402/49843810-9fad-41b9-8690-88d1a37a426b) | ![image](https://github.com/Nadegamra/STPP/assets/63640402/3b9448dd-b9bf-4e15-9257-2e426b14e944)
 ### Forgot Password Page 
 Wireframe                  |  Implementation
 :-------------------------:|:-------------------------:
-![Forgot_Password](https://github.com/Nadegamra/STPP/assets/63640402/adfad688-a372-40a3-85d6-cad3662a50fa) | ![image](https://github.com/Nadegamra/STPP/assets/63640402/2bd9e4b1-9975-4f5b-b5a6-9ccbfdb79f5b)
+![image](https://github.com/Nadegamra/online-learning-platform/assets/63640402/d65ab6a1-207a-43c5-864a-d52b9f45f90f) | ![image](https://github.com/Nadegamra/STPP/assets/63640402/2bd9e4b1-9975-4f5b-b5a6-9ccbfdb79f5b)
 ### Courses Page
 Wireframe                  |  Implementation
 :-------------------------:|:-------------------------:
-![Course_List_Page](https://github.com/Nadegamra/STPP/assets/63640402/d5697c9b-19b0-4b82-8e4d-44a8e36bc929) | ![image](https://github.com/Nadegamra/STPP/assets/63640402/e64f8a96-6397-4667-a4a8-b5b17cad4d94)
+![image](https://github.com/Nadegamra/online-learning-platform/assets/63640402/d46fd1e7-2257-497c-b592-8a6731de402a) | ![image](https://github.com/Nadegamra/STPP/assets/63640402/e64f8a96-6397-4667-a4a8-b5b17cad4d94)
 ### Course Page
 Wireframe                  |  Implementation
 :-------------------------:|:-------------------------:
-![Course_Page](https://github.com/Nadegamra/STPP/assets/63640402/4104e372-c16d-41e8-9f03-a3532fba60e0) | ![image](https://github.com/Nadegamra/STPP/assets/63640402/1b51a94d-8e67-4160-b9dd-4a41c69e4bb6)
+![image](https://github.com/Nadegamra/online-learning-platform/assets/63640402/2d1ef9b2-6394-4c10-bcff-c11d01929508) | ![image](https://github.com/Nadegamra/STPP/assets/63640402/1b51a94d-8e67-4160-b9dd-4a41c69e4bb6)
 ### Info Page View Page
 Wireframe                  |  Implementation
 :-------------------------:|:-------------------------:
-![Info_Page_View](https://github.com/Nadegamra/STPP/assets/63640402/fd175521-8894-44f9-b9ad-35fb1d2abd97) | ![image](https://github.com/Nadegamra/STPP/assets/63640402/042368dc-9a5c-40d8-800f-45af0aa824f2)
+![image](https://github.com/Nadegamra/online-learning-platform/assets/63640402/e7a966c5-f225-4a35-b167-8ab91de61a42) | ![image](https://github.com/Nadegamra/STPP/assets/63640402/042368dc-9a5c-40d8-800f-45af0aa824f2)
 ### Change Email Page
 ### Change Password Page
 ### Confirm Email Page
