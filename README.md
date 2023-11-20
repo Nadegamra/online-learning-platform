@@ -91,7 +91,7 @@ An example full-stack web app for creating and participating in online courses
 - Replace .env.prod file VITE_BACKEND_URI with either http://localhost if run locally or with deployed backend url
 - Execute `docker-compose -f docker.compose.yml up` from `./Frontend` directory
 ## System architecture
-![image](https://github.com/Nadegamra/online-learning-platform/assets/63640402/1f614db1-e331-4169-9cf1-ae4c8d62dcdc)
+![image](https://github.com/Nadegamra/online-learning-platform/assets/63640402/ba476c33-6149-4b2d-80b0-ada0868d860a)
 
 ## API reference
 - [Authentication microservice](https://github.com/Nadegamra/microservices-authentication/blob/master/APIReference.md)
